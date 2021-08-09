@@ -16,7 +16,7 @@ public class TriangleArea {
         System.out.println("Enter the height of the triangle: ");
         double height = lol.nextDouble();
 
-        double area = (base * height) / 2;
+        double area = base * height / 2d;
         System.out.println("Area of Triangle = " + area);
     }
 }

@@ -9,8 +9,7 @@ public class Speed {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Please, input distance in meters: ");
-        float meters = scan.nextFloat();
-        float kilometers = meters / 1000;
+        int meters = scan.nextInt();
         System.out.println("Please, input hours: ");
         int hours = scan.nextInt();
         System.out.println("Please, input minutes: ");
@@ -19,9 +18,9 @@ public class Speed {
         int seconds = scan.nextInt();
 
         float globalSeconds = hours*3600 + minutes*60 + seconds;
-        float globalHours = (globalSeconds) / 3600;
-        float speed1 = (float) (meters / globalSeconds);
-        float speed2 = (float) (kilometers / globalHours);
+        float globalHours = globalSeconds / 3600;
+        float speed1 = meters / globalSeconds;
+        float speed2 = meters / 1000f / globalHours;
 
         System.out.println("Your speed in meters/second is " + speed1);
         System.out.println("Your speed in km/h is " + speed2);

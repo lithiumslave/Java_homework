@@ -10,7 +10,7 @@ public class InchesToMeters {
 
         System.out.println("Please, enter inches: ");
         double inch = scan.nextDouble(); // I use "double", so user can enter not only integer value
-        double meter = 0.0254 * inch;
+        double meter = 0.0254d * inch;
         System.out.println(inch + " inches is " + meter + " meters");
 
         /* VARIATION 2 (variable declaration with given data)

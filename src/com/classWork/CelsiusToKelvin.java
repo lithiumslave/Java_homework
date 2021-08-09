@@ -9,7 +9,7 @@ public class CelsiusToKelvin {
 
         System.out.println("Please, input temperature in Celsius: ");
         float celsius = scan.nextFloat();
-        float kelvin = (float) (celsius + 273.16);
+        float kelvin = celsius + 273.16f;
 
         System.out.println("Temperature in Kelvin is: " + kelvin);
     }

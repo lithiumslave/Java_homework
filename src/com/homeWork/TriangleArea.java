@@ -16,7 +16,7 @@ public class TriangleArea {
 
         // make radians from degrees
         double radians = Math.toRadians(degrees);
-        double area = (double) ((sideA*sideB) / 2)*(Math.sin(radians));
+        double area = sideA * sideB / 2d * Math.sin(radians);
         System.out.println("The area of triangle is: " + area);
     }
 }
