@@ -16,10 +16,6 @@ public class BMI {
 
         System.out.println("Body Mass Index is: " + mbi);
 
-
-        // HOLA< COMMENT FOR THE COMMIT
-        // and another one
-        // aaaand another one
         
         /*int pounds = 452;
         int inches = 72;
