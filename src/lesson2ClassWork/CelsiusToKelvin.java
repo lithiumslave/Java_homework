@@ -1,4 +1,4 @@
-package com.classWork;
+package lesson2ClassWork;
 
 import java.util.Scanner;
 
