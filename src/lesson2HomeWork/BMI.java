@@ -18,6 +18,7 @@ public class BMI {
 
 
         // HOLA< COMMENT FOR THE COMMIT
+        // and another one
         /*int pounds = 452;
         int inches = 72;
         double mbi = pounds / Math.pow(inches, 2) * 703;
