@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DayOrEvening {
     public static void main(String[] args) {
-        // Good evening >18
+        // Good evening > 18
         // Otherwise Good day
         // Use IF and Ternary
 
@@ -18,9 +18,20 @@ public class DayOrEvening {
             System.out.println("Please, enter time in the range of 0-24 hours!");
             time = scan.nextInt();
         }
-        /*if (time = 17; time < 0 || time > 24; time++) {
-            System.out.println("Please, enter time in the range of 0-24 hours!")
-            };*/
+
+        // Force me to enter time twice, idk how to solve:
+       /* for (int counter = 0; counter < 10; counter++) {
+            System.out.println("Please, enter time in the range of 0-24 hours!");
+            time = scan.nextInt();
+            if ((time < 0 || time > 24) && counter == 9) {
+                System.out.println("You are drunk. Drink some coffee and come back later ;)");
+                return;
+            } else if (time < 0 || time > 24) {
+                System.out.println("Your input is incorrect, try again!");
+            } else {
+                break;
+            }
+        }*/
 
         // Hello condition (Ternary)
         String result = (time > 18) ? "Good evening!" : "Good day!";
@@ -32,5 +43,6 @@ public class DayOrEvening {
         } else {
             System.out.println("Good day!");
         }*/
+
         }
 }
