@@ -12,13 +12,13 @@ public class ColorToLength {
 
         switch (color) {
             case "red": System.out.println("Length of your color is 3"); break;
+            case "pink":
             case "blue": System.out.println("Length of your color is 4"); break;
-            case "green": System.out.println("Length of your color is 5"); break;
-            case "yellow": System.out.println("Length of your color is 6"); break;
-            case "orange": System.out.println("Length of your color is 6"); break;
-            case "black": System.out.println("Length of your color is 5"); break;
+            case "green":
+            case "black":
             case "white": System.out.println("Length of your color is 5"); break;
-            case "pink": System.out.println("Length of your color is 4"); break;
+            case "yellow":
+            case "orange": System.out.println("Length of your color is 6"); break;
             default: System.out.println("I have no info about this color, check the conditions of the task!");
         }
 

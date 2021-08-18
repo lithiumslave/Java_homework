@@ -35,7 +35,9 @@ public class LogIn {
             System.out.println("Congrats! You are logged in!");
         }
 
-        /*// My own validation: Name const, Pass > 5 and const.
+        /*
+        // ----------------------------------------------------------------
+        // My own validation: Name const, Pass > 5 and const.
 
         Scanner scan = new Scanner(System.in);
 
