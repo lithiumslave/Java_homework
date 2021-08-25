@@ -29,7 +29,7 @@ public class ArrayAverageValue {
 
         // Enter n cells values
         for(int i = 0; i < array.length; i++) {
-            System.out.print("Enter element № " + (i + 1) + ":");
+            System.out.print("Enter element № " + (i + 1) + ": ");
             array[i] = scan.nextInt();
         }
 
@@ -41,6 +41,6 @@ public class ArrayAverageValue {
         // Find the average value of n cells values
         double average = sum / array.length;
 
-        System.out.println("Average of our array is : " + average);
+        System.out.println("Average of our array is: " + average);
     }
 }

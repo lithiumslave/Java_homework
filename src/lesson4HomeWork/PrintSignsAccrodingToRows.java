@@ -29,7 +29,7 @@ public class PrintSignsAccrodingToRows {
 
         // Print triangle of # symbols (first row is "##")
         for (int j = 0; j < Integer.parseInt(rows); j++) {
-            for(int h = 0; h <= j; h++) {
+            for (int h = 0; h <= j; h++) {
                 // Condition for the first row ("##")
                 if (h == 0){
                     System.out.print("##");

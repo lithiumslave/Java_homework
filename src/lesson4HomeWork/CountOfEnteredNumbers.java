@@ -11,6 +11,7 @@ public class CountOfEnteredNumbers {
 
         char choice;
 
+        System.out.print("I will display the number of positive, negative, zero values of your numbers. ");
         do {
             System.out.println("Enter your number");
             number = valera.nextInt();
