@@ -33,12 +33,6 @@ public class MainTask {
         int num1 = NumbersOperations.validateNumberFromTo(number, 10, 1000);
         System.out.println("Your number is " + num1);
 
-        /*while (number < 10 || number > 1000) {
-            System.out.println("Wrong! You need to enter time in the range from 10 to 1000. Please, try again: ");
-            number = scan.nextInt();
-        }
-        System.out.println("Your number is " + number);*/
-
         int reverse = NumbersOperations.reverseNumber(num1);
         System.out.println("I reverse your number, please check: " + reverse);
 

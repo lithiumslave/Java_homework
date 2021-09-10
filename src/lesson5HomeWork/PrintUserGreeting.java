@@ -11,6 +11,6 @@ public class PrintUserGreeting {
     }
 
     public static void greeting(String name) {
-        System.out.println("GOOOOOD MORNING, VIETNAM! " + "We have a new person here, please welcome " + name + "! Enjoy and have fun ;)");
+        System.out.println("GOOOOOD MORNING, VIETNAM! " + "We have a new person here, please welcome " + name.toUpperCase() + "! Enjoy and have fun ;)");
     }
 }

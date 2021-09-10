@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PrintRectangle {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        //Scanner scan = new Scanner(System.in);
         int height = 5, width = 7;
         rectanglePrint(height, width);
     }
