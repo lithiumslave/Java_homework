@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ArraySumValues {
     public static void main(String[] args) {
-        // 1 + 2 + 3 + 5 + 6 + 7 + 11 + 13 + 19 = 67 esli sho
+        // 1 + 2 + 3 + 5 + 6 + 7 + 11 + 13 + 19 = 67
 
         int array[] = {1, 2, 3, 5, 6, 7, 11, 13, 19};
         int sum = 0;
@@ -16,6 +16,6 @@ public class ArraySumValues {
         System.out.println("The sum of all array values is " + sum);
     }
 
-    Scanner scan = new Scanner(System.in);
+    // Scanner scan = new Scanner(System.in);
 
 }
