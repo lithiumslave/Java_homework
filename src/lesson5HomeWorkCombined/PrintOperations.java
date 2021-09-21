@@ -5,6 +5,9 @@ public class PrintOperations {
         System.out.println("GOOOOOD MORNING, VIETNAM! " + "We have a new person here, please welcome " + name.toUpperCase() + "! Enjoy and have fun ;)");
     }
 
+    public static void printSeparator() {
+        System.out.println("************************************************************************");
+    }
 
     public static void multiplicationTable(double num) {
         for (int i = 1; i <= 10; ++i) {
