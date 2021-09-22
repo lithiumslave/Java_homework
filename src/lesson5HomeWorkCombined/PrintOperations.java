@@ -6,7 +6,7 @@ public class PrintOperations {
     }
 
     public static void printSeparator() {
-        System.out.println("************************************************************************");
+        System.out.println("----------------------------------------------------------------");
     }
 
     public static void multiplicationTable(double num) {
