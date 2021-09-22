@@ -58,14 +58,23 @@ public class MainClass {
         // ---- 5 task from homework ----
         PrintOperations.printSeparator();
         Table table1 = new Table(24, "Oak");
-        Table table2 = new Table(26, "Pine");
+        Table table2 = new Table(24, "Oak");
+        //Table table2 = new Table(26, "Pine");
 
-        Chair chair1 = new Chair(24, "Oak");
+        //Chair chair1 = new Chair(24, "Oak");
+        Chair chair1 = new Chair(13, "Birch");
         Chair chair2 = new Chair(13, "Birch");
 
-        // Equality
-        System.out.println("Table is a chair? " + table1.equals(chair1));
-        //System.out.println("Table is a chair? " + (table1 == chair1));
+        Chair chair3 = chair1;
 
+        // Equality
+        System.out.println("Tables are the same? " + table1.equals(table2));
+        System.out.println("Tables are the same? " + (table1 == table2));
+
+        System.out.println("Chairs are the same? " + chair1.equals(chair2));
+        System.out.println("Chairs are the same? " + (chair1 == chair2));
+
+        System.out.println("Chairs are the same? " + chair1.equals(chair3));
+        System.out.println("Chairs are the same? " + (chair1 == chair3));
     }
 }
