@@ -15,5 +15,6 @@ public class Aspirant extends Student{
         } else {
             return 180;
         }
+        // ternary operator: return (getAverageMark() == 5) ? 200 : 180;
     }
 }
