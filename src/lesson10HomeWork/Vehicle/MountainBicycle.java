@@ -3,9 +3,7 @@ package lesson10HomeWork.Vehicle;
 public class MountainBicycle extends Bicycle{
     private int seatHeight;
 
-    public MountainBicycle() {
-        this.seatHeight = 0;
-    }
+    public MountainBicycle() {}
 
     public MountainBicycle(int seatHeight, int id, int gear) {
         super(id, gear);

@@ -16,11 +16,6 @@ public class Horse extends Animal{
         System.out.println("Horse is eating some food");
     }
 
-    @Override
-    public void sleep() {
-        System.out.println("Horse is sleeping");
-    }
-
     public String getBeauty() {
         return beauty;
     }

@@ -3,9 +3,7 @@ package lesson10HomeWork.Vehicle;
 public class RoadBicycle extends Bicycle{
     private int rudderDepth;
 
-    public RoadBicycle() {
-        this.rudderDepth = 0;
-    }
+    public RoadBicycle() {}
     public RoadBicycle(int rudderDepth, int id, int gear) {
         super(id, gear);
         this.rudderDepth = rudderDepth;

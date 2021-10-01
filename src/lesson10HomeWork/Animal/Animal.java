@@ -9,15 +9,13 @@ public abstract class Animal {
         this.location = location;
     }
 
-    public void makeNoise() {
-        System.out.println("Animal make noise");
-    }
+    public abstract void makeNoise();
 
-    public void eat() {
-        System.out.println("Animal is eating");
-    }
+    public abstract void eat();
 
-    public abstract void sleep();
+    public void sleep() {
+        System.out.println("Animal is sleeping...");
+    }
 
     public String getFood() {
         return food;
