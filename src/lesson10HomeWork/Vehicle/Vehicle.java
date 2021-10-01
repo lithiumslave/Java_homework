@@ -4,10 +4,7 @@ public abstract class Vehicle {
     int speed;
     private String model;
 
-    public Vehicle() {
-        this.speed = 0;
-        this.model = "";
-    }
+    public Vehicle() {}
 
     public Vehicle(int speed, String model) {
         this.speed = speed;

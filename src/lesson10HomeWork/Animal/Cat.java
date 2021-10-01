@@ -1,10 +1,6 @@
 package lesson10HomeWork.Animal;
 
 public class Cat extends Animal{
-    public void setHateHuman(String hateHuman) {
-        this.hateHuman = hateHuman;
-    }
-
     private String hateHuman;
 
     public Cat(String food, String location, String hateHuman) {
@@ -20,12 +16,11 @@ public class Cat extends Animal{
         System.out.println("Cat is eating some food");
     }
 
-    @Override
-    public void sleep() {
-        System.out.println("Cat is sleeping");
-    }
-
     public String getHateHuman() {
         return hateHuman;
+    }
+
+    public void setHateHuman(String hateHuman) {
+        this.hateHuman = hateHuman;
     }
 }

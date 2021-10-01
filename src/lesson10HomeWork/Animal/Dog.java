@@ -17,11 +17,6 @@ public class Dog extends Animal{
         System.out.println("Dog is eating some food");
     }
 
-    @Override
-    public void sleep() {
-        System.out.println("Dog is sleeping");
-    }
-
     public String getLoveHuman() {
         return loveHuman;
     }
