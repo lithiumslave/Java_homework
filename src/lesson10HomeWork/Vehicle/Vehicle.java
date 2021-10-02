@@ -28,9 +28,9 @@ public abstract class Vehicle {
 
     public abstract void move();
 
-    final void stop() {
+    /*final void stop() {
         System.out.println(this.model + " has stopped");
-    }
+    }*/
 
     public String getModel() {
         return model;

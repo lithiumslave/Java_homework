@@ -15,7 +15,28 @@ public class Runner {
         Vehicle hel3 = hel1;
         Vehicle hel4 = new Helicopter(4, 400, 200);
 
+        // Homework11
+        Air hel5 = new Helicopter(4, 200, 200);
+        hel5.gainingAltitude();
+        Air.lowerAltitude();
+
+        System.out.println();
+
+        Ground bike = new RoadBicycle();
+        Ground.ride();
+        bike.stop();
+
+        System.out.println();
+
+        Ground bikeMount = new MountainBicycle();
+        Rollable bikeMountSec = new MountainBicycle();
+        Ground.ride();
+        bikeMount.stop();
+        bikeMountSec.hasWheels();
+        bikeMountSec.wheels(2);
+
         // MOUNTAIN BICYCLE
+        PrintOperations.printSeparator();
         mountBic.setSeatHeight(5);
         mountBic.changeGear(3);
         System.out.println("Final setup for your mountain bike:" +

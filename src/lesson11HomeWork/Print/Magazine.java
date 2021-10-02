@@ -9,20 +9,20 @@ public class Magazine implements Printable{
         this.name = name;
     }
 
+    static void printMagazine(Printable[] printable) {
+        for (Printable printM : printable) {
+            if (printM instanceof Magazine) {
+                System.out.println(((Magazine) printM).getName());
+            }
+        }
+    }
+
     @Override
     public void print() {
         System.out.println("Need to print magazine with " + paperType + " type of paper");
     }
 
-    static void printMagazines(Printable[] printable) {
-
-    }
-
-    public String getPaperType() {
-        return paperType;
-    }
-
-    public void setPaperType(String paperType) {
-        this.paperType = paperType;
+    public String getName() {
+        return name;
     }
 }

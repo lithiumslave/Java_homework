@@ -2,13 +2,18 @@ package lesson10HomeWork.Vehicle;
 
 import java.util.Objects;
 
-public class Helicopter extends Vehicle{
+public class Helicopter extends Vehicle implements Air{
     int amountOfPassengers, maxHeight, tankSize;
 
     public Helicopter(int amountOfPassengers, int maxHeight, int tankSize) {
         this.amountOfPassengers = amountOfPassengers;
         this.maxHeight = maxHeight;
         this.tankSize = tankSize;
+    }
+
+    @Override
+    public void gainingAltitude() {
+        Air.super.gainingAltitude();
     }
 
     public void move() {

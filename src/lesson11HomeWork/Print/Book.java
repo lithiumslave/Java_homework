@@ -18,28 +18,15 @@ public class Book implements Printable{
         System.out.println("Need to print book with " + pageNums + " pages");
     }
 
-   /* static void printBooks(Printable[] printable) {
-        for (Printable print : printable) {
-            printable.
+    static void printBooks(Printable[] printable) {
+        for (Printable printB : printable) {
+            if (printB instanceof Book) {
+                System.out.println(((Book) printB).getName());
+            }
         }
-
-
-        if(printable instanceof Cat) {
-            print("Cat loves human or not? - " + ((Cat) animal).getHateHuman());
-        } else if(animal instanceof Dog) {
-            print("Dog loves human or not? - " + ((Dog) animal).getLoveHuman());
-        } else if(animal instanceof Horse) {
-            print("Is horse beautiful or not? - " + ((Horse) animal).getBeauty());
-        } else {
-            print("Undefined animal");
-        }
-    }*/
-
-    public int getPageNums() {
-        return pageNums;
     }
 
-    public void setPageNums(int pageNums) {
-        this.pageNums = pageNums;
+    public String getName() {
+        return name;
     }
 }

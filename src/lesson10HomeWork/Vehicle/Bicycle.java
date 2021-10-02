@@ -1,6 +1,6 @@
 package lesson10HomeWork.Vehicle;
 
-public abstract class Bicycle extends Vehicle {
+public abstract class Bicycle extends Vehicle implements Ground{
     public final int id;
     protected int gear;
 
@@ -12,6 +12,10 @@ public abstract class Bicycle extends Vehicle {
     public Bicycle(int id, int gear) {
         this.id = id;
         this.gear = gear;
+    }
+
+    public void stop() {
+        System.out.println("Bicycle has stopped");
     }
 
     public int speedUp(int valueIncrease) {
