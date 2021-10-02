@@ -16,6 +16,10 @@ public class MountainBicycle extends Bicycle implements Rollable{
         System.out.println("Mountain bike has stopped");
     }
 
+    public void start() {
+        System.out.println("Mountain bike start moving");
+    }
+
     public void hasWheels() {
         System.out.println("Your vehicle has wheels");
     }

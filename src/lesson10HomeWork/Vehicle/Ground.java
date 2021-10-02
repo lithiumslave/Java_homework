@@ -2,8 +2,9 @@ package lesson10HomeWork.Vehicle;
 
 public interface Ground {
     void stop();
+    void start();
 
     static void ride() {
-        System.out.println("The vehicle is moving on the ground");
+        System.out.println("This is vehicle and it can move on the ground");
     };
 }

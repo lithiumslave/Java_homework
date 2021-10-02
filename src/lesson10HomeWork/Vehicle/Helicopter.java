@@ -2,7 +2,7 @@ package lesson10HomeWork.Vehicle;
 
 import java.util.Objects;
 
-public class Helicopter extends Vehicle implements Air{
+public class Helicopter extends Vehicle implements Flyable {
     int amountOfPassengers, maxHeight, tankSize;
 
     public Helicopter(int amountOfPassengers, int maxHeight, int tankSize) {
@@ -13,7 +13,11 @@ public class Helicopter extends Vehicle implements Air{
 
     @Override
     public void gainingAltitude() {
-        Air.super.gainingAltitude();
+        System.out.println("Helicopter is gaining altitude");
+    }
+
+    public void lowerAltitude() {
+        System.out.println("Helicopter is going down the altitude");
     }
 
     public void move() {

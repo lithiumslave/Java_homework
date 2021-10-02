@@ -2,8 +2,6 @@ package lesson10HomeWork.Vehicle;
 
 import lesson5HomeWorkCombined.PrintOperations;
 
-import java.sql.SQLOutput;
-
 public class Runner {
     public static void main(String[] args) {
         MountainBicycle mountBicEmpty = new MountainBicycle();
@@ -16,21 +14,25 @@ public class Runner {
         Vehicle hel4 = new Helicopter(4, 400, 200);
 
         // Homework11
-        Air hel5 = new Helicopter(4, 200, 200);
+        Flyable hel5 = new Helicopter(4, 200, 200);
+        Flyable.canFly();
         hel5.gainingAltitude();
-        Air.lowerAltitude();
+        hel5.lowerAltitude();
 
         System.out.println();
 
         Ground bike = new RoadBicycle();
         Ground.ride();
+        bike.start();
         bike.stop();
 
         System.out.println();
 
         Ground bikeMount = new MountainBicycle();
         Rollable bikeMountSec = new MountainBicycle();
+
         Ground.ride();
+        bikeMount.start();
         bikeMount.stop();
         bikeMountSec.hasWheels();
         bikeMountSec.wheels(2);
