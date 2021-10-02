@@ -9,6 +9,15 @@ public class RoadBicycle extends Bicycle{
         this.rudderDepth = rudderDepth;
     }
 
+    public void stop() {
+        System.out.println("Road bike has stopped");
+    }
+
+    @Override
+    public void start() {
+        System.out.println("Road bike start moving");
+    }
+
     public int getRudderDepth() {
         return rudderDepth;
     }
