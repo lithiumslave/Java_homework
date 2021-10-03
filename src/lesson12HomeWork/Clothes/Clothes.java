@@ -14,19 +14,9 @@ public abstract class Clothes {
 
 
     public void selectedSizeInfo() {
-        switch(this.size) {
-            case XXS: System.out.println("Size " + Size.XXS + " (Euro size: " + size.getEuroSize() + "), " + size.getDescription()); break;
-            case XS: System.out.println("Size " + Size.XS + " (Euro size: " + size.getEuroSize() + "), " + size.getDescription()); break;
-            case S: System.out.println("Size " + Size.S + " (Euro size: " + size.getEuroSize() + "), " + size.getDescription()); break;
-            case M: System.out.println("Size " + Size.M + " (Euro size: " + size.getEuroSize() + "), " + size.getDescription()); break;
-            case L: System.out.println("Size " + Size.L + " (Euro size: " + size.getEuroSize() + "), " + size.getDescription()); break;
-            default: System.out.println("Unknown size");
-        }
+        System.out.println("Size " + size + " (Euro size: " + size.getEuroSize() + "), " + size.getDescription());
     }
 
-    public Size getSize() {
-        return size;
-    }
 
     public int getPrice() {
         return price;

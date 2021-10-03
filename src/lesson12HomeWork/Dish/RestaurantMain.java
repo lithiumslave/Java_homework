@@ -8,5 +8,6 @@ public class RestaurantMain {
         rest.selectDish(Dish.BEEF_BURGER);
         rest.selectDish(Dish.TIRAMISU);
         rest.selectDish(Dish.RIBEYE_STAKE);
+        
     }
 }
