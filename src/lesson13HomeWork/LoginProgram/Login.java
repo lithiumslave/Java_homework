@@ -4,11 +4,11 @@ public class Login {
 
     public static boolean isStringValid(String toValidate) {
             for (int i = 0; i < toValidate.length(); i++) {
-                if (!Character.isLetterOrDigit(toValidate.charAt(i)) || (toValidate.charAt(i) != '_')) {
-                    return true;
+                if (!Character.isLetterOrDigit(toValidate.charAt(i)) && (toValidate.charAt(i) != '_')) {
+                    return false;
                 }
             }
-        return false;
+        return true;
     }
 
     public static void loginUser (String login, String password, String confirmPassword) {
@@ -30,8 +30,9 @@ public class Login {
     }
 
     public static void main(String[] args) {
-        loginUser("ValeraaV:::! ÍŒÅ", "qweds ÎÍÅr123", "qweds ÎÍ fÅr123");
+        loginUser("` ", "qweds ÎÍÅr123", "qweds ÎÍ fÅr123");
         loginUser("ValeraValera", "qwerty 123", "qwerty123");
+        loginUser("Valerka_666", "lolkek_123", "lolkek_123");
     }
 }
 
