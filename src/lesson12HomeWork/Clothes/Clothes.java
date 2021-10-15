@@ -17,7 +17,6 @@ public abstract class Clothes {
         System.out.println("Size " + size + " (Euro size: " + size.getEuroSize() + "), " + size.getDescription());
     }
 
-
     public int getPrice() {
         return price;
     }
