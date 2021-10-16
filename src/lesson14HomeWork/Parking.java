@@ -11,7 +11,7 @@ public class Parking {
 
     private List<Vehicle> vehicles;
 
-    public List<Vehicle> getAuthorisedVehicles(){
+    private List<Vehicle> getAuthorisedVehicles(){
         vehicles = new ArrayList<>();
         vehicles.add(new Vehicle("Audi", "Red", 4211));
         vehicles.add(new Vehicle("Ford", "White", 4212));
@@ -42,25 +42,33 @@ public class Parking {
         PrintOperations.printSeparator();
     }
 
-    public void leaveParking (Vehicle vehicle) {
+    void leaveParking (Vehicle vehicle) {
         parkingPlacesNum--;
         System.out.println(vehicle.getBrand() + " just left parking zone!");
         System.out.println("Available parking places number: " + availableParkingPlaces());
         PrintOperations.printSeparator();
     }
 
-    public boolean authoriseCarOrTruck(Vehicle veh) {
+    /*private boolean authoriseCarOrTruck(Vehicle veh) {
         if (veh instanceof Car) {
             return ((Car) veh).getCarType().equals("Car");
         } else return veh instanceof Motorcycle;
+    }*/
+
+    public boolean authoriseCarOrTruck(Vehicle veh) {
+        if (veh instanceof Car && ((Car) veh).getCarType().equals("Truck")) {
+            return false ;
+        } else {
+            return true;
+        }
     }
 
-    public boolean compareWithListOfAuthorisedVehicles(Vehicle veh) {
+    private boolean compareWithListOfAuthorisedVehicles(Vehicle veh) {
         List<Vehicle> vehicles = getAuthorisedVehicles();
         return vehicles.contains(veh);
     }
 
-    public boolean limitInParkingCheck() {
+    private boolean limitInParkingCheck() {
         if (parkingPlacesNum < parkingMaxLimit) {
             parkingPlacesNum++;
             return true;
@@ -69,12 +77,12 @@ public class Parking {
         }
     }
 
-    public static int availableParkingPlaces() {
+    private static int availableParkingPlaces() {
         int availablePlaces = parkingMaxLimit - getParkingPlacesNum();
         return availablePlaces;
     }
 
-    public static int getParkingPlacesNum() {
+    private static int getParkingPlacesNum() {
         return parkingPlacesNum;
     }
 }
