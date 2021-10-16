@@ -32,7 +32,7 @@ public class Parking {
             } else if (!limitInParkingCheck()) {
                 throw new ExceededLimitException("There are no available parking places in this parking lot!");
             } else {
-                System.out.println("Welcome to this parking lot");
+                System.out.println("Welcome to this parking lot!");
             }
         } catch (NoEntryForVehicleException | ExceededLimitException e) {
             System.out.println("FAILED! " + e.getMessage());
@@ -44,7 +44,7 @@ public class Parking {
 
     public void leaveParking (Vehicle vehicle) {
         parkingPlacesNum--;
-        System.out.println(vehicle.getBrand() + " left parking zone!");
+        System.out.println(vehicle.getBrand() + " just left parking zone!");
         System.out.println("Available parking places number: " + availableParkingPlaces());
         PrintOperations.printSeparator();
     }
